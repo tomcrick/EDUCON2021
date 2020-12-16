@@ -1,146 +1,71 @@
-%%
-%% This is file `sample-sigconf.tex',
-%% generated with the docstrip utility.
-%%
-%% The original source files were:
-%%
-%% samples.dtx  (with options: `sigconf')
-%% 
-%% IMPORTANT NOTICE:
-%% 
-%% For the copyright see the source file.
-%% 
-%% Any modified versions of this file must be renamed
-%% with new filenames distinct from sample-sigconf.tex.
-%% 
-%% For distribution of the original source see the terms
-%% for copying and modification in the file samples.dtx.
-%% 
-%% This generated file may be distributed as long as the
-%% original source files, as listed above, are part of the
-%% same distribution. (The sources need not necessarily be
-%% in the same archive or directory.)
-%%
-%% The first command in your LaTeX source must be the \documentclass command.
-\documentclass[sigconf]{acmart}
+\documentclass[conference]{IEEEtran}
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage[british]{babel}
-%\usepackage[noadjust]{cite}
+\usepackage[noadjust]{cite}
 \usepackage{url}
 \usepackage[hyphenbreaks]{breakurl}
+%\usepackage{amsmath,amssymb,amsfonts}
+%\usepackage{algorithmic}
+%\usepackage{graphicx}
+%\usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{lscape}
 \usepackage{graphicx}
+\usepackage[pdftex,colorlinks=true]{hyperref}
 \def\UrlBreaks{\do\/\do-}
-\newcommand\notype[1]{\unskip}
-
-%%
-%% \BibTeX command to typeset BibTeX logo in the docs
-\AtBeginDocument{%
-  \providecommand\BibTeX{{%
-    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
-
-%% Rights management information.  This information is sent to you
-%% when you complete the rights form.  These commands have SAMPLE
-%% values in them; it is your responsibility as an author to replace
-%% the commands and values with those provided to you when you
-%% complete the rights form.
-
-%% These commands are for a PROCEEDINGS abstract or paper.
-\copyrightyear{2021} 
-\acmYear{2021} 
-\setcopyright{acmcopyright}\acmConference[SIGCSE '21]{The 52nd ACM Technical Symposium on Computer Science Education}{March 17--20, 2021}{Toronto, Canada}
-\acmBooktitle{The 52nd ACM Technical Symposium on Computer Science Education (SIGCSE '21), March 17--20, 2021, Toronto, Canada}
-\acmPrice{15.00}
-% \acmDOI{}
-% \acmISBN{}
-
-
-%%
-%% Submission ID.
-%% Use this when submitting an article to a sponsored event. You'll
-%% receive a unique submission ID from the organizers
-%% of the event, and this ID should be used as the parameter to this command.
-%%\acmSubmissionID{123-A56-BU3}
-
-%%
-%% The majority of ACM publications use numbered citations and
-%% references.  The command \citestyle{authoryear} switches to the
-%% "author year" style.
-%%
-%% If you are preparing content for an event
-%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
-%% citations and references.
-%% Uncommenting
-%% the next command will enable that style.
-%%\citestyle{acmauthoryear}
-
-%%
-%% end of the preamble, start of the body of the document source.
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-%%
-%% The "title" command has an optional parameter,
-%% allowing the author to define a "short title" to be used in page headers.
-\title[The International Impact of COVID-19 on CS Education]{The
-  Impact of COVID-19 and ``Emergency Remote Teaching'' on
+\title{The Impact of COVID-19 and ``Emergency Remote Teaching'' on
   International Computer Science Education Practitioners}
+%   \\{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+% should not be used}
+% \thanks{Identify applicable funding agency here. If none, delete this.}
 
-%%
-%% The "author" command and its associated commands are used to define
-%% the authors and their affiliations.
-%% Of note is the shared affiliation of the first two authors, and the
-%% "authornote" and "authornotemark" commands
-%% used to denote shared contribution to the research.
+\author{\IEEEauthorblockN{Tom Crick\IEEEauthorrefmark{1}, Cathryn
+    Knight\IEEEauthorrefmark{1}, Richard
+    Watermeyer\IEEEauthorrefmark{2}, Janet Goodall\IEEEauthorrefmark{1}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Education, 
+Swansea University, Swansea, UK\\
+Email: \{thomas.crick,cathryn.knight,j.s.goodall\}@swansea.ac.uk}
+\IEEEauthorblockA{\IEEEauthorrefmark{2}School of Education, 
+University of Bristol, Bristol, UK\\
+Email: richard.watermeyer@bristol.ac.uk}}
 
-\author{Anonymized Author(s)}
-
-% \author{Tom Crick}
-% \orcid{0000-0001-5196-9389}
-% \affiliation{%
-%   \institution{Swansea University}
-%   \city{Swansea}
-%   \country{UK}
+% \author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+% % \orcid{0000-0001-5196-9389}
+% \and
+% \IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+% % \orcid{0000-0002-7574-3090}
+% \and
+% \IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+% % \orcid{0000-0002-2365-3771}
+% \and
+% \IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+% % \orcid{0000-0002-0172-2035}
 % }
-% \email{thomas.crick@swansea.ac.uk}
 
-% \author{Cathryn Knight}
-% \orcid{0000-0002-7574-3090}
-% \affiliation{%
-%   \institution{Swansea University}
-%   \city{Swansea}
-%   \country{UK}
-% }
-%   \email{cathryn.knight@swansea.ac.uk}
+\maketitle
 
-% \author{Richard Watermeyer}
-% \orcid{0000-0002-2365-3771}
-% \affiliation{%
-%   \institution{University of Bristol}
-%   \city{Bristol}
-%   \country{UK}
-% }
-% \email{richard.watermeyer@bristol.ac.uk}
-
-% \author{Janet Goodall}
-% \orcid{0000-0002-0172-2035}
-% \affiliation{%
-%   \institution{Swansea University}
-%   \city{Swansea}
-%   \country{UK}
-% }
-%   \email{j.s.goodall@swansea.ac.uk}
-
-%% By default, the full list of authors will be used in the page
-%% headers. Often, this list is too long, and will overlap
-%% other information printed in the page headers. This command allows
-%% the author to define a more concise list
-%% of authors' names for this purpose.
-%\renewcommand{\shortauthors}{Crick, et al.}
-
-%%
-%% The abstract is a short summary of the work to be presented in the
-%% article.
 \begin{abstract}
 The COVID-19 pandemic has imposed ``emergency remote teaching'' across
 education globally, leading to the closure of institutions across all
@@ -166,50 +91,15 @@ for computer science practitioners, there were concerns raised
 regarding the ability to effectively deliver technical topics online,
 as well as the impact on various types of formal examinations and
 assessment. We also offer informed commentary from this rapid response
-international survey on emerging LT\&A strategies that
-will likely continue to be constrained by coronavirus into 2021 and
-possibly beyond.
+international survey on emerging LT\&A strategies that will likely
+continue to be constrained by coronavirus into 2021 and possibly
+beyond.
 \end{abstract}
 
-%%
-%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
-%% Please copy and paste the code instead of the example below.
-%%
-\begin{CCSXML}
-<ccs2012>
-<concept>
-<concept_id>10003456.10003457.10003527</concept_id>
-<concept_desc>Social and professional topics~Computing education</concept_desc>
-<concept_significance>500</concept_significance>
-</concept>
-<concept>
-<concept_id>10003456.10010927</concept_id>
-<concept_desc>Social and professional topics~User characteristics</concept_desc>
-<concept_significance>500</concept_significance>
-</concept>
-<concept>
-<concept_id>10002944.10011123.10010912</concept_id>
-<concept_desc>General and reference~Empirical studies</concept_desc>
-<concept_significance>500</concept_significance>
-</concept>
-</ccs2012>
-\end{CCSXML}
-
-\ccsdesc[500]{Social and professional topics~Computing education}
-\ccsdesc[500]{Social and professional topics~User characteristics}
-\ccsdesc[500]{General and reference~Empirical studies}
-
-%%
-%% Keywords. The author(s) should pick words that accurately describe
-%% the work being presented. Separate the keywords with commas.
-\keywords{COVID-19, emergency remote teaching, practitioner
-perceptions, schools, universities, computer science
-education}
-
-%%
-%% This command processes the author and affiliation and title
-%% information and builds the first part of the formatted document.
-\maketitle
+\begin{IEEEkeywords}
+COVID-19, emergency remote teaching, practitioner perceptions,
+schools, universities, computer science education
+\end{IEEEkeywords}
 
 \section{Introduction}\label{intro}
 
@@ -337,6 +227,7 @@ N.B. With regards to the consistent naming of the discipline through this
 paper, we use ``computer science'' to refer to the wider cognate
 discipline as represented by computing, ICT, informatics, etc, across
 all educational settings.
+
 
 \section{Methods}\label{methods}
 
@@ -522,6 +413,7 @@ set''~\cite[p.82]{braun+clarke:2006}. These themes were reviewed
 rigorously against the data to ensure that they were compatible with
 the data and accurately represented the comments.
 
+
 \section{Results}\label{results}
 
 \subsection{Quantitative Data}\label{quantdata}
@@ -676,7 +568,7 @@ Survey statement &
 \caption{Responses to statements by sector (*number of percent of those agreeing with statement compared to disagreeing)}
 \label{tab:respbysect}
 \end{table*}
-%\end{landscape}
+% \end{landscape}
 
 \subsection{Qualitative Data}\label{qualdata}
 
@@ -1015,6 +907,7 @@ massively blown out the proportion of time I expected to spend
 teaching, and as such I am not engaging in the research I need to be
 doing}}'' [USA].
 
+
 \section{Discussion}\label{discussion}
 
 % \begin{quotation}
@@ -1304,24 +1197,28 @@ studies are conducted to capture the longer-term impact to computer
 science education, especially as it appears that the virus may have to
 be tolerated on an indefinite basis~\cite{kissler-et-al:2020}.
 
-%\newpage
+% \section*{Acknowledgements}
 
-%%
-%% The acknowledgments section is defined using the "acks" environment
-%% (and NOT an unnumbered section). This ensures the proper
-%% identification of the section in the article metadata, and the
-%% consistent spelling of the heading.
-% \begin{acks}
-% To Robert, for the bagels and explaining CMYK and color spaces.
-% \end{acks}
+% This work was supported by the {\emph{Institute of Coding}} (IoC),
+% which received \pounds20m of funding from the Office for Students
+% (OfS), as well as support from the Higher Education Funding Council
+% for Wales (HEFCW).
 
-%%
-%% The next two lines define the bibliography style to be used, and
-%% the bibliography file.
-\bibliographystyle{ACM-Reference-Format}
-\bibliography{SIGCSE2021}
+% We are grateful to the IoC Observatory staff, especially Dr Fiona
+% MacGill (University of Bath), for the data collection. The first
+% author is also grateful to Dr Matt Dickson (University of Bath) for
+% discussions about undergraduate degrees and labour market returns in
+% the UK~\cite{DfE2018d}, but any mistakes are the authors' alone.
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{50}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+\bibliographystyle{IEEEtran}      % basic style, author-year citations
+\bibliography{SIGCSE2021} 
 
 \end{document}
-%\endinput
-%%
-%% End of file `sample-sigconf.tex'.
